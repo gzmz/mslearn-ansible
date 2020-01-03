@@ -12,7 +12,7 @@ pool:
 - task: Ansible@0
   inputs:
     ansibleInterface: 'remoteMachine'
-    connectionOverSsh: 'Ansible VM'
+    connectionOverSsh: 'SSH - Ansible VM'
     playbookSourceRemoteMachine: 'agentMachine'
     playbookRootRemoteMachine: '$(System.DefaultWorkingDirectory)'
     playbookPathLinkedArtifactOnRemoteMachine: 'users.yml'
